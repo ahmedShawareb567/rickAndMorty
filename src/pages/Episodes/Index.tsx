@@ -58,7 +58,7 @@ export default () => {
           cacheOptions
           defaultOptions
           loadOptions={loadEpisodesOptions}
-          placeholder={"Select Location"}
+          placeholder={"Select Episode"}
           components={{
             NoOptionsMessage: ReactSelectCustomNoOptionsMessage,
             LoadingMessage,
