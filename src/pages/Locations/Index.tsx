@@ -85,7 +85,9 @@ export default () => {
                 ))}
               </div>
             ) : (
-              <NoData />
+              <div className="d-flex justify-content-center">
+                <NoData />
+              </div>
             )}
           </>
         )}
