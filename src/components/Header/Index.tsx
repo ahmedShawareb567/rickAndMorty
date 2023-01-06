@@ -16,7 +16,7 @@ export const Header = ({ children }: HeaderInterface) => {
           <AppImage src="/images/logo.png" alt="logo" ratio="3-1" />
         </div>
 
-        <ul className="header-menu mb-5 p-0 text-center mt-4 mt-md-0">
+        <ul className="header-menu mb-3 mb-md-5 p-0 text-center mt-4 mt-md-0">
           <li className="ms-xs pb-3">
             <PublicLink to="/">Characters</PublicLink>
           </li>

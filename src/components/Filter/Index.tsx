@@ -80,20 +80,17 @@ export const Filter = ({ onChange }: FilterInterface) => {
           <DropDown>
             <div>
               {statusOptions.map((status, index) => (
-                <p
-                  className="mb-0 py-2 px-3 d-flex align-items-center"
-                  key={index}
-                >
-                  <input
-                    type="radio"
-                    name="status"
-                    id={status}
-                    value={status}
-                    className="form-check-input me-sm"
-                    onChange={ChangeStateAction}
-                  />
-                  <label htmlFor={status} className="fs-xs">
-                    {status}
+                <p className="mb-0 py-2 px-3 d-block w-100" key={index}>
+                  <label htmlFor={status} className="fs-xs d-block">
+                    <input
+                      type="radio"
+                      name="status"
+                      id={status}
+                      value={status}
+                      className="form-check-input me-sm"
+                      onChange={ChangeStateAction}
+                    />
+                    <span> {status}</span>
                   </label>
                 </p>
               ))}
@@ -103,20 +100,17 @@ export const Filter = ({ onChange }: FilterInterface) => {
           <DropDown title="Species">
             <div>
               {speciesOptions.map((specie, index) => (
-                <p
-                  className="mb-0 py-2 px-3 d-flex align-items-center"
-                  key={index}
-                >
-                  <input
-                    type="radio"
-                    name="species"
-                    id={`sp-${specie}`}
-                    value={specie}
-                    className="form-check-input me-sm"
-                    onChange={ChangeSpeciesAction}
-                  />
-                  <label htmlFor={`sp-${specie}`} className="fs-xs">
-                    {specie}
+                <p className="mb-0 py-2 px-3 d-block w-100" key={index}>
+                  <label htmlFor={`sp-${specie}`} className="fs-xs d-block">
+                    <input
+                      type="radio"
+                      name="species"
+                      id={`sp-${specie}`}
+                      value={specie}
+                      className="form-check-input me-sm"
+                      onChange={ChangeSpeciesAction}
+                    />
+                    <span>{specie}</span>
                   </label>
                 </p>
               ))}
@@ -126,20 +120,17 @@ export const Filter = ({ onChange }: FilterInterface) => {
           <DropDown title="Gender">
             <div>
               {genderOptions.map((gender, index) => (
-                <p
-                  className="mb-0 py-2 px-3 d-flex align-items-center"
-                  key={index}
-                >
-                  <input
-                    type="radio"
-                    name="gender"
-                    id={`g-${gender}`}
-                    value={gender}
-                    className="form-check-input me-sm"
-                    onChange={ChangeGenderAction}
-                  />
-                  <label htmlFor={`g-${gender}`} className="fs-xs">
-                    {gender}
+                <p className="mb-0 py-2 px-3 d-block w-100" key={index}>
+                  <label htmlFor={`g-${gender}`} className="fs-xs d-block">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id={`g-${gender}`}
+                      value={gender}
+                      className="form-check-input me-sm"
+                      onChange={ChangeGenderAction}
+                    />
+                    <span>{gender}</span>
                   </label>
                 </p>
               ))}
