@@ -5,8 +5,6 @@
     <img src="https://rick-and-morty-1d9zqeaa3-ahmedshawareb567.vercel.app/images/rick-icon.svg" alt="icon"/>
 </p>
 
-<img src="" alt="icon"/>
-
 Welcome to my React app! This app was built using [Vite](https://vitejs.dev/), [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/), [Redux](https://redux.js.org/), [Bootstrap](https://getbootstrap.com/), and [SCSS](https://sass-lang.com/).
 
 ## Node version (v16.14.1)
