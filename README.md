@@ -15,13 +15,13 @@ git clone https://github.com/[USERNAME]/[REPO_NAME].git
 - Install the dependencies:
 
 ```pash
-yarn || npm install
+yarn
 ```
 
 - Start the development server:
 
 ```pash
-yarn dev || npm run dev
+yarn dev
 ```
 
 The app will now be running at `http://localhost:3000`. Any changes you make to the code will automatically be reflected in the browser.
@@ -31,7 +31,7 @@ The app will now be running at `http://localhost:3000`. Any changes you make to 
 To build and deploy the app, run the following command 🧪 :
 
 ```pash
-yarn build || npm run build
+yarn build
 ```
 
 This will create a production-ready build of the app in the dist folder.
@@ -39,5 +39,5 @@ This will create a production-ready build of the app in the dist folder.
 To preview the app after build, run the following command 🚀 :
 
 ```pash
-yarn preview || npm run preview
+yarn preview
 ```

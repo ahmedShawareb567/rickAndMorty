@@ -17,13 +17,13 @@ export const Header = ({ children }: HeaderInterface) => {
         </div>
 
         <ul className="header-menu mb-5 p-0 text-center mt-4 mt-md-0">
-          <li className="ms-xs">
+          <li className="ms-xs pb-3">
             <PublicLink to="/">Characters</PublicLink>
           </li>
-          <li className="ms-xs">
+          <li className="ms-xs pb-3">
             <PublicLink to="/episodes">Episodes</PublicLink>
           </li>
-          <li className="ms-xs">
+          <li className="ms-x pb-3">
             <PublicLink to="/locations">Locations</PublicLink>
           </li>
         </ul>
