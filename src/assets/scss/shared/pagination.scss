@@ -1,0 +1,45 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0rem;
+  margin: 0rem;
+  text-align: center;
+  list-style: none;
+  &-item {
+    a {
+      display: inline-block;
+      width: 2.5rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      border-radius: 50%;
+      color: $primary;
+      margin: 0rem 0.4rem;
+    }
+    &.active {
+      a {
+        background-color: $secondary;
+      }
+    }
+  }
+  &-previous,
+  &-next {
+    a {
+      display: inline-block;
+      line-height: 3rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      color: $white;
+      background-color: $primary;
+      &:hover {
+        color: $white !important;
+      }
+      .icon {
+        width: 1rem !important;
+        height: 1rem !important;
+      }
+    }
+  }
+}

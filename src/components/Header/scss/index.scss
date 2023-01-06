@@ -1,0 +1,38 @@
+.header {
+  padding: 6rem 0rem 3rem 0rem;
+  background: url("../../../../public/images/header-image.png") no-repeat center
+    center;
+  background-size: cover;
+  &-logo {
+    width: rem(250px);
+    max-width: 100%;
+    height: auto;
+    .appImage {
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  &-menu {
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        color: $white;
+        font-weight: 500;
+        font-size: rem(18px);
+        padding: 0.5rem 1rem;
+        transition: all 0.1s ease-in-out;
+        &:hover {
+          color: $white !important;
+        }
+        &.active {
+          background-color: $white;
+          color: $primary !important;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+}

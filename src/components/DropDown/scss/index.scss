@@ -1,0 +1,83 @@
+.dropMenu {
+  .icon {
+    width: rem(24px) !important;
+    height: rem(24px) !important;
+  }
+  &-arrow {
+    transition: transform 0.1s ease-in-out;
+    .icon {
+      width: 0.8rem !important;
+      height: 0.8rem !important;
+    }
+  }
+  &-title {
+    display: block;
+    padding: 0.8rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    color: $body-color !important;
+    background-color: transparent;
+    user-select: none;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      background-color: $gray-300 !important;
+    }
+  }
+  &-content {
+    overflow-y: auto;
+    transition: all 0.15s ease-in-out;
+    height: 0rem;
+    max-height: 10rem;
+    @include media-breakpoint-down(md) {
+      max-height: 7rem;
+    }
+    ul {
+      padding: 0.4rem 0.4rem 0.4rem 0.5rem;
+      list-style: none;
+      li {
+        a {
+          position: relative;
+          display: block;
+          padding: 0.2rem 1.5rem 0.2rem 0.1rem;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0rem;
+            right: 0rem;
+            width: 0.3rem;
+            height: 100%;
+            border-radius: 0.4rem;
+            background-color: transparent;
+          }
+          &.active {
+            &::after {
+              background-color: $primary;
+            }
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  input[type="checkbox"]:checked {
+    & ~ .dropMenu {
+      &-title {
+        background-color: #{scale-color($secondary, $alpha: -80%)};
+        color: $secondary;
+        .dropMenu {
+          &-arrow {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      &-content {
+        margin: 0.4rem 0rem;
+        height: auto;
+        ul {
+          margin: 0rem 0rem 1rem 0rem;
+        }
+      }
+    }
+  }
+}

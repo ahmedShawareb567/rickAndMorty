@@ -1,0 +1,12 @@
+.noData {
+  &-content {
+    padding: 2rem;
+    background-color: #{scale-color($danger, $alpha: -85%)};
+    border-radius: 1.5rem;
+  }
+
+  .icon {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+}

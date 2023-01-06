@@ -1,0 +1,30 @@
+.appCard {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 0.1rem solid $secondary;
+  height: 100%;
+  &-location {
+    width: rem(40px);
+    height: rem(40px);
+    border-radius: 50%;
+    background-color: $gray-300;
+  }
+
+  &-header {
+    position: relative;
+  }
+
+  &-badge {
+    position: absolute;
+    top: 1rem;
+    inset-inline-end: 1rem;
+    background-color: $success;
+    border-radius: 0.5rem;
+    &.Dead {
+      background-color: $danger;
+    }
+    &.unknown {
+      background-color: $gray-400;
+    }
+  }
+}
